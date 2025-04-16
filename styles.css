@@ -1,0 +1,74 @@
+/* TODO: Implement the CSS styles for the calculator
+   Your task is to style the calculator to match the design in the image.
+   You'll need to style the body, calculator container, display, buttons, and other elements.
+   Use appropriate colors, sizes, and layouts to create a visually appealing calculator.
+  
+   Have fun styling your calculator app!
+*/
+
+body {
+   margin: 0;
+   padding: 0;
+   background-color: #32cd32; /* Green background */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.calculator {
+   background-color: #000;
+   border-radius: 20px;
+   padding: 20px;
+   width: 25%;
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.calculator-display {
+   background-color: #000;
+   color: white;
+   font-size: 2rem;
+   padding: 20px 10px;
+   text-align: right;
+   border-radius: 10px;
+   margin-bottom: 10px;
+   min-height: 50px;
+   overflow-x: auto;
+}
+
+.calculator-buttons {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-gap: 10px;
+}
+
+.button {
+   font-size: 1.2rem;
+   padding: 20px;
+   border: none;
+   border-radius: 50%;
+   cursor: pointer;
+   background-color: #2e2e2e;
+   color: white;
+   transition: background-color 0.2s;
+}
+
+.button:hover {
+   background-color: #444;
+}
+
+.gray {
+   background-color: #a5a5a5;
+   color: black;
+}
+
+.orange {
+   background-color: #f1a33c;
+   color: white;
+}
+
+.large-button {
+   grid-column: span 2;
+   border-radius: 30px;
+}
